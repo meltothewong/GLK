@@ -1,0 +1,58 @@
+/* Layout
+-----------------------------------------------------------------------------*/
+.container,
+.container-wide {
+	width: 45rem;
+	max-width: 95%;
+	margin: 0 auto;
+	padding: 2rem;
+}
+.container-wide {
+	width: 64rem;
+}
+.center {
+    text-align: center;
+}
+.row {
+    display: block;
+}
+section {
+	margin-bottom: 9rem;
+}
+body {
+	background-color: $color-stone;
+}
+.box {
+	background-color: $color-stone;
+	padding: 2.2rem 1.6rem;
+	color: #fff;
+	font-size: 1.5rem;
+	h1 {
+		color: #fff;
+	}
+}
+.logo {
+	max-width: 40px;
+	margin: 0 auto;
+}
+.samples {
+	padding: .5em;
+	margin: 0 auto;
+}
+hr {
+    border: 0 none;
+    background-color: #E0DFDF;
+    height: 0.04em;
+    margin: 5em;
+}
+img {
+width: 100%;
+height: auto;
+}
+button {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	outline: none;
+	cursor: pointer;
+}

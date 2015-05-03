@@ -1,0 +1,32 @@
+/* Layout
+-----------------------------------------------------------------------------*/
+$gutter: 3%;
+$break-smaller: 480px;
+$break-smallish: 720px;
+$break-small: 880px;
+$break-med: 1200px;
+$break-large: 1760px;
+
+$break-nav: 750px;
+
+/* Color
+-----------------------------------------------------------------------------*/
+$color-green: #C5ECE5;
+$color-green-dark: #4EB6A3;
+$color-green-bright: #00FFD0;
+$color-stone: #f7f7f7;
+$color-stone-darker: darken($color-stone, 10);
+$color-grey: #494847;
+$color-grey-dark: #2C2A2C;
+$color-red: #ED5154;
+$color-pink: #CA1A49;
+$color-taupe: #e6ebe4;
+$color-taupe-darker: #C2C6C9;
+$color-purple: #462352;
+
+/* Typography
+-----------------------------------------------------------------------------*/
+$font-header: "proxima-nova-alt",Helvetica,Arial,sans-serif;
+
+$transition: all 0.2s ease-in-out;
+$transition-long: all 0.5s cubic-bezier(0.51, 0.01, 0.37, 0.98);

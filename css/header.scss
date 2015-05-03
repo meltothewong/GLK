@@ -1,0 +1,14 @@
+/* Header
+-----------------------------------------------------------------------------*/
+header {
+	font-size: 2.4em;
+	font-family: $font-header;
+	padding: 1em;
+	color: $color-grey;
+}
+.header-background {
+	background-color: $color-green;
+	background-size: cover;
+	background-position: 40% center;
+	padding: 5rem 0 5rem;
+}

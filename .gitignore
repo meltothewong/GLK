@@ -1,0 +1,22 @@
+# Ignore everything in the root except the "wp-content" directory and selected files.
+/*
+.DS_Store
+!.gitignore
+!wp-content/
+!favicon.ico
+!htaccess.txt
+!fabfile.py
+!robots.txt
+!css/
+!fonts/
+!images/
+!docs/
+!sass/
+!js/
+!Gruntfile.js/
+!package.json/
+!router.php/
+
+# Ignore everything in the "wp-content" directory, except the "themes" directory.
+wp-content/*
+!wp-content/themes/

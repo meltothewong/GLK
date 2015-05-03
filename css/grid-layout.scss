@@ -1,0 +1,116 @@
+.grid {
+    text-align: justify;
+    font-size: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    &:after {
+        width: 100%;
+        content: "";
+        display: inline-block;
+    }
+}
+.grid-base {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+.grid-placeholder {
+    margin: 0;
+}
+.grid-1-1 {
+    @extend .grid-base;
+    width: 100%;
+}
+.grid-2-3 {
+    @extend .grid-base;
+    width: 66.66% - $gutter/2;
+}
+.grid-1-3 {
+    @extend .grid-base;
+    width: 33.33% - $gutter/2;
+}
+.grid-1-2 {
+    @extend .grid-base;
+    width: 50%  - $gutter/2;
+}
+.grid-1-4 {
+    @extend .grid-base;
+    width: 25%  - $gutter/2;
+}
+.grid-3-4 {
+    @extend .grid-base;
+    width: 75%  - $gutter/2;
+}
+.grid-1-5 {
+    @extend .grid-base;
+    width: 20% - $gutter/2;
+}
+.grid-1-6 {
+    @extend .grid-base;
+    width: 16.66% - $gutter/2;
+}
+.grid-golden-large {
+    @extend .grid-base;
+    width: 61.8% - $gutter/2;
+}
+.grid-golden-small {
+    @extend .grid-base;
+    width: 38.2% - $gutter/2;
+}
+@media screen and (max-width: $break-small) {
+    .grid-1-2,
+    .grid-2-3,
+    .grid-3-4,
+    .grid-golden-large,
+    .grid-golden-small {
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+    .grid-1-6 {
+        width: 33.33% - $gutter/2;
+    }
+    .hidden-small {
+        display: none;
+    }
+}
+@media screen and (min-width: ($break-small + 1)) {
+    .visible-small {
+        display: none !important;
+    }
+}
+@media screen and (max-width: $break-nav) {
+    .hidden-nav {
+        display: none !important;
+    }
+}
+@media screen and (min-width: ($break-nav + 1)) {
+    .visible-nav {
+        display: none !important;
+    }
+}
+@media screen and (max-width: $break-smallish) {
+    .grid-1-3 {
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+    .grid-1-4,
+    .grid-1-5 {
+        width: 50% - $gutter/2;
+        margin: 0 0 2rem 0;
+    }
+}
+@media screen and (max-width: $break-smaller) {
+    .grid-1-4,
+    .grid-1-5
+    .grid-1-6 {
+        width: 50% - $gutter/2;
+        margin: 0 0 1rem 0;
+    }
+    .hidden-smaller {
+        display: none;
+    }
+}
