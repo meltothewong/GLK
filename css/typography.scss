@@ -1,5 +1,37 @@
-/* Typography
------------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'icomoon';
+    src:url('/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/icomoon.svg#icomoon') format('svg'),
+        url('/fonts/icomoon.woff') format('woff'),
+        url('/fonts/icomoon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.icon:before {
+    font-family: 'icomoon';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 4em;
+}
+.icon-logo:before {
+    content: "\e600";
+}
+.icon-facebook:before {
+    content: "\ea8d";
+}
+.icon-twitter:before {
+    content: "\ea91";
+}
+.icon-instagram:before {
+    content: "\ea90";
+}
+.icon-yelp:before {
+    content: "\ead9";
+}
 html {
 	font-family: $font-header;
 	font-size: 100%;
@@ -11,21 +43,21 @@ h1 {
 	font-style: normal;
 	font-weight: 700;
 	font-size: 2.5rem;
-	line-height: 1.7;
+	line-height: 1.5;
 	letter-spacing: 2px;
 	color: $color-blue;
 	text-transform: uppercase;
+	padding-top: 1rem;
 }
 
 h2 {
 	font-style: normal;
 	font-weight: 600;
 	font-size: 1.5rem;
-	line-height: 1.7;
+	line-height: 1.5;
 	letter-spacing: 2px;
 	color: $color-blue;
 	text-transform: uppercase;
-	margin-top: 1em;
 }
 h3 {
 	font-style: normal;
@@ -35,7 +67,14 @@ h3 {
 	letter-spacing: 2px;
 	color: $color-blue;
 	text-transform: uppercase;
-	margin-top: 1em;
+}
+h4 {
+	font-style: italic;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 0.2;
+	letter-spacing: 2px;
+	color: $color-blue;
 }
 p {
 	font-style: normal;
@@ -43,7 +82,7 @@ p {
 	line-height: 1.5;
 	color: $color-blue;
 	font-size: 1rem;
-	margin-bottom: 1rem;
+	margin-bottom: .5rem;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }

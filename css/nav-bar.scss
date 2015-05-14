@@ -28,6 +28,7 @@ nav {
 		display: inline-block;
 		text-transform: uppercase;
 		border-bottom: .5em solid transparent;
+		vertical-align: bottom;
 		&:last-child {
 			padding-right: 0;
 		}
@@ -62,5 +63,12 @@ nav {
 	}
 	.current-menu-item {
 		border-bottom-color: $color-blue;
+	}
+}
+.nav-home-link {
+	font-size: 3em;
+	a {
+		color: $color-blue;
+		padding: 0 0 .5rem 0;
 	}
 }
