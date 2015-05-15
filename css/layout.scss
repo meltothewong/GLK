@@ -55,3 +55,12 @@ button {
 	outline: none;
 	cursor: pointer;
 }
+.polaroid {
+  padding: .7rem .7rem 1rem;
+  background-color: $color-stone;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: all 0.1s cubic-bezier(0.51, 0.01, 0.37, 0.98);
+  text-align: center;
+  cursor: pointer;
+}
