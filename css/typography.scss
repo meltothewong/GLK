@@ -39,6 +39,9 @@ html {
 	-moz-osx-font-smoothing: grayscale;
 }
 h1 {
+	visibility: hidden;
+}
+h2 {
 	font-family: $font-header;
 	font-style: normal;
 	font-weight: 700;
@@ -49,8 +52,7 @@ h1 {
 	text-transform: uppercase;
 	padding-top: 1rem;
 }
-
-h2 {
+h3 {
 	font-style: normal;
 	font-weight: 600;
 	font-size: 1.5rem;
@@ -59,7 +61,7 @@ h2 {
 	color: $color-blue;
 	text-transform: uppercase;
 }
-h3 {
+h4 {
 	font-style: normal;
 	font-weight: 300;
 	font-size: 1.5rem;
@@ -68,7 +70,7 @@ h3 {
 	color: $color-blue;
 	text-transform: uppercase;
 }
-h4 {
+h5 {
 	font-style: italic;
 	font-weight: 400;
 	font-size: 1rem;
