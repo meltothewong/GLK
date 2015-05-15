@@ -45,6 +45,8 @@ module.exports = function(grunt) {
         php: {
             watch: {},
             options: {
+                hostname: 'localhost',
+                port: '8000',
                 open: true,
                 router: __dirname + '/router.php',
             }

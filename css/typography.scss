@@ -13,7 +13,7 @@ h1 {
 	font-size: 2.5rem;
 	line-height: 1.7;
 	letter-spacing: 2px;
-	color: $color-grey-dark;
+	color: $color-blue;
 	text-transform: uppercase;
 }
 
@@ -23,7 +23,7 @@ h2 {
 	font-size: 1.5rem;
 	line-height: 1.7;
 	letter-spacing: 2px;
-	color: $color-grey-dark;
+	color: $color-blue;
 	text-transform: uppercase;
 	margin-top: 1em;
 }
@@ -33,7 +33,7 @@ h3 {
 	font-size: 1.5rem;
 	line-height: 1.7;
 	letter-spacing: 2px;
-	color: $color-grey-dark;
+	color: $color-blue;
 	text-transform: uppercase;
 	margin-top: 1em;
 }
@@ -41,7 +41,7 @@ p {
 	font-style: normal;
 	font-weight: 400;
 	line-height: 1.5;
-	color: $color-grey;
+	color: $color-blue;
 	font-size: 1rem;
 	margin-bottom: 1rem;
 	overflow: hidden;
@@ -49,10 +49,10 @@ p {
 }
 a {
 	text-decoration: none;
-	color: $color-green-dark;
+	color: $color-blue;
 	transition: $transition;
 	&:hover {
-		color: saturate(darken($color-green-dark, 30), 30);
+		color: saturate(darken($color-blue, 30), 30);
 	}
 }
 blockquote {
@@ -60,7 +60,7 @@ blockquote {
     font-style: italic;
     font-weight: 400;
     line-height: 1.5;
-    color: $color-green;
+    color: $color-blue;
     font-size: 1.8rem;
     text-align: center;
     letter-spacing: .04rem;

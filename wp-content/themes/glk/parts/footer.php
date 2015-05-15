@@ -4,7 +4,6 @@
 	            <li><a href="https://instagram.com/grandlakekitchen/">Instagram</a></li>
               <li><a href="https://www.facebook.com/GrandLakeKitchen/">Facebook</a></li>
         	</nav>
-			<div class="container center"><p>©Copyright 2015</p></div>
 		</footer>
 		<div class="modal-wrapper">
 			<div class="modal-close"></div>

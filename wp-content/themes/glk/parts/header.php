@@ -20,10 +20,18 @@
 
 </head>
 <body <?php body_class(); ?>>
-    <nav class="center">
-        <li><a href="/#">Home</a></li>
-        <li><a href="/#">Menu</a></li>
-        <li><a href="/#">Hours</a></li>
-        <li><a href="/#">Contact</a></li>
-    </nav>
+    <header>
+        <nav class="center">
+            <?php wp_nav_menu( array('menu' => 'Main Menu', 'container_class' => '' )); ?>
+        </nav>
+        <?php 
+            $headline = simple_fields_get_post_group_values(get_the_id(), "Headline", false, 2);
+            $headline = $headline[0];
+            if ($headline[1]) : 
+        ?>
+                <div class="header-image" style="background-image: url('<?= wp_get_attachment_url($headline[1]); ?>')"></div>
+        <?php
+            endif;
+        ?>
+    </header>
         

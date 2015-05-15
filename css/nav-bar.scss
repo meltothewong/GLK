@@ -22,14 +22,12 @@
 nav {
 	font-style: normal;
 	font-weight: 700;
-	border-color: #E7E5E5;
-	border-style: solid;
-	border-width: .15em;
 	font-size: .7rem;
 	letter-spacing: .17rem;
 	li {
 		display: inline-block;
 		text-transform: uppercase;
+		border-bottom: .5em solid transparent;
 		&:last-child {
 			padding-right: 0;
 		}
@@ -43,7 +41,6 @@ nav {
 		}
 	}
 	ul {
-		float: right;
 		@media (max-width: $break-smaller) {
 			float: none;
 			text-align: center;
@@ -62,5 +59,8 @@ nav {
 	}
 	p {
 		color: #fff;
+	}
+	.current-menu-item {
+		border-bottom-color: $color-blue;
 	}
 }
