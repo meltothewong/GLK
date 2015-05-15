@@ -41,7 +41,6 @@
         ?>
         <div class="stripe">
             <div class="container center">
-                <h1>Grand Lake Kitchen</h1>
                 <h3>Visit Us</h3> 
                 <p>Hours: Wednesday - Monday, 9:00 - 9:30PM</p>
                 <p>Happy Hour: 4:00 - 7:00PM</p>
