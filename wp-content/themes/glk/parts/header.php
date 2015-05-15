@@ -45,7 +45,7 @@
                 <h3>Visit Us</h3> 
                 <p>Hours: Wednesday - Monday, 9:00 - 9:30PM</p>
                 <p>Happy Hour: 4:00 - 7:00PM</p>
-                <p>576 Grand Avenue Oakland, CA 94610 | 510-922-9582</p>        
+                <p>576 Grand Avenue Oakland, CA 94610 | 510-922-9582</p>    
             </div>
         </div>
     </header>

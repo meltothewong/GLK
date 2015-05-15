@@ -1,8 +1,10 @@
 		<footer>
 			<nav class="center">
-	            <li><a href="mailto:contact@grandlakekitchen.com" target="_top">Contact</a></li>
-	            <li><a href="https://instagram.com/grandlakekitchen/">Instagram</a></li>
-              <li><a href="https://www.facebook.com/GrandLakeKitchen/">Facebook</a></li>
+                <ul>
+                    <li><a href="mailto:contact@grandlakekitchen.com" target="_top">Contact</a></li>
+                    <li><a href="https://instagram.com/grandlakekitchen/">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/GrandLakeKitchen/">Facebook</a></li>
+                </ul>
         	</nav>
 		</footer>
 		<div class="modal-wrapper">
