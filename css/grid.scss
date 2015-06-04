@@ -1,0 +1,85 @@
+.grid {
+    text-align: justify;
+    font-size: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin-bottom: 0;
+    &:after {
+        width: 100%;
+        content: "";
+        display: inline-block;
+    }
+}
+.grid-base {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    @media screen and (max-width: $break-small) {
+        margin-bottom: 1.5rem;
+    }
+}
+.grid-1-1 {
+    @extend .grid-base;
+    width: 100%;
+}
+.grid-2-3 {
+    @extend .grid-base;
+    width: 66.66% - $gutter/2;
+}
+.grid-1-3 {
+    @extend .grid-base;
+    width: 33.33% - $gutter/2;
+}
+.grid-1-2 {
+    @extend .grid-base;
+    width: 50%  - $gutter/2;
+}
+.grid-1-4 {
+    @extend .grid-base;
+    width: 25%  - $gutter/2;
+}
+.grid-3-4 {
+    @extend .grid-base;
+    width: 75%  - $gutter/2;
+}
+.grid-1-5 {
+    @extend .grid-base;
+    width: 20% - $gutter/2;
+}
+.grid-1-6 {
+    @extend .grid-base;
+    width: 16.66% - $gutter/2;
+}
+:not(.no-collapse) {
+    @media screen and (max-width: $break-smaller) {
+        &.grid-1-2,
+        &.grid-2-3,
+        &.grid-3-4 {
+            width: 100%;
+        }
+        &.grid-1-6,
+        &.grid-1-2 .grid-1-3,
+        &.grid-2-3 .grid-1-3 {
+            width: 33.33% - $gutter/2;
+        }
+        &.grid-1-1-sm {
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: $break-smallest) {
+        &.grid-1-3 {
+            width: 100%;
+        }
+        &.grid-1-2 .grid-1-3,
+        &.grid-2-3 .grid-1-3,
+        &.grid-1-4,
+        &.grid-1-5,
+        &.grid-1-6, {
+            width: 50% - $gutter/2;
+        }
+    }
+}

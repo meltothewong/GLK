@@ -1,0 +1,23 @@
+.fdm-menu {
+    @extend .grid;
+    p {
+        margin-bottom: 0;
+    }
+}
+.fdm-column {
+    @extend .grid-1-2;
+}
+.fdm-section-header p,
+.fdm-item-content {
+    color: $color-slate;
+}
+.fdm-item-price {
+    @extend .text-muted;
+}
+.fdm-section {
+    margin-bottom: 3em;
+}
+.fdm-section-header,
+.fdm-item {
+    margin-bottom: 1.5rem;
+}
