@@ -3,7 +3,7 @@ Starkers_Utilities::get_template_parts( array( 'parts/header' ) );
 if (have_posts()) : while (have_posts()) : the_post();
 ?>
 
-<div class="center-col">
+<div class="container padding-top">
 	<?php the_content(); ?>
 </div>
 

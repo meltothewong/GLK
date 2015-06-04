@@ -1,21 +1,26 @@
-<?php /* Template Name: Press*/ ?>
+<?php /* Template Name: Press */ ?>
 
 <?php
 Starkers_Utilities::get_template_parts( array( 'parts/header' ) );
 if (have_posts()) : while (have_posts()) : the_post();
-$post = simple_fields_get_post_group_values(get_the_id(), "Post", false, 2);
-$post = $post[0];
 ?>
-<div class="container">
+<div class="container-wide padding-top">
 	<div class="grid">
-		<div class="grid-1-3">
-			<div class="polaroid">
-				<a href="http://splashpad.org/2015/03/splash-pad-newsletter-march-2015/">
-					<img src="http://splashpad.org/wp-content/uploads/2015/02/GrandLakeKitchen3-300x237.jpg"></img>
-					<p>East Bay Eats</p>
+        <?php
+        $presses = simple_fields_get_post_group_values(get_the_id(), "Press", false, 2);
+            foreach ($presses as $press) :
+                if ($press_image = wp_get_attachment_image_src( $press[1], 'thumbnail' )) {
+                    $press_image = $press_image[0];
+                }
+        ?>
+				<a class="grid-1-4 polaroid" href="<?= $press[3] ?>">
+					<img src="<?= $press_image ?>" alt="<?= $press[2] ?>"></img>
+					<p><?= $press[2] ?></p>
 				</a>
-			</div>
-		</div>
+        <?php
+            endforeach;
+        ?>
+        <div class="grid-1-4"></div><div class="grid-1-4"></div> <!-- Placeholders -->
 	</div>
 </div>
 <?php

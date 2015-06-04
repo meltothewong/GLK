@@ -1,38 +1,26 @@
-		<footer>
-			<nav class="center">
-                <ul>
-                    <li><a href="mailto:contact@grandlakekitchen.com" target="_top">Contact</a></li>
-                    <li><a href="https://instagram.com/grandlakekitchen/">Instagram</a></li>
-                    <li><a href="https://www.facebook.com/GrandLakeKitchen/">Facebook</a></li>
+		<footer class="stripe">
+            <div class="container">
+                <ul class="grid visit-us">
+                    <li class="grid-1-2">
+                        <strong class="text-muted icon icon-clock"></strong>
+                        <span>Open 9am - 9:30pm. Closed Tuesdays.</span>
+                    </li>
+                    <li class="grid-1-2">
+                        <strong class="text-muted icon icon-location"></strong>
+                        <a href="https://goo.gl/maps/obYH7" target="_blank">576 Grand Avenue Oakland, CA 94610</a>
+                    </li>
+                    <li class="grid-1-2">
+                        <strong class="text-muted icon icon-beer"></strong>
+                        <span>Happy Hour 4 - 7pm</span>
+                    </li>
+                    <li class="grid-1-2">
+                        <strong class="text-muted icon icon-talk-bubbles"></strong>
+                        <a href="tel:510-922-9582">510-922-9582</a>
+                    </li>
                 </ul>
-        	</nav>
+            </div>
 		</footer>
-		<div class="modal-wrapper">
-			<div class="modal-close"></div>
-			<div class="modal">
-				<img src="">
-			</div>
-		</div>
-		<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+		<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
         <script src="/js/build/production.js"></script>
-        <script>
-        	function modal_open() {
-        		$('body').addClass('modal-shown');
-        	}
-        	function modal_close() {
-        		$('body').removeClass('modal-shown');
-        	}
-        	$('.modal-image').click(function() {
-        		var image_url = $(this).attr('data-image');
-        		$('.modal img').attr('src', image_url)
-        		modal_open();
-        	});
-        	$('.modal-wrapper').click(function() {
-        		modal_close();
-        	});
-        	$('.modal').click(function(e) {
-        		e.stopPropagation();
-        	});        
-        </script>
 	</body>
 </html>
