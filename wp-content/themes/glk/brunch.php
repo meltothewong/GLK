@@ -1,4 +1,4 @@
-<?php /* Template Name: Menu */ ?>
+<?php /* Template Name: Brunch */ ?>
 
 <?php
 Starkers_Utilities::get_template_parts( array( 'parts/header' ) );
@@ -16,10 +16,10 @@ $post = $post[0];
 <div class="stripe stripe-alt">
     <div class="container-wide">
         <h1 class="center">
-            <span class="btn btn-primary btn-big no-click">Menu</span>
-            <a class="btn btn-inactive btn-big" href="/weekend-brunch#menu">Weekend Brunch</a>
+            <a class="btn btn-inactive btn-big" href="/#menu">Menu</a>
+            <span class="btn btn-primary btn-big no-click">Weekend Brunch</span>
         </h1>
-        <?php echo do_shortcode('[fdm-menu id=37]'); ?>
+        <?php echo do_shortcode('[fdm-menu id=169]'); ?>
     </div>
 </div>
 <?php
