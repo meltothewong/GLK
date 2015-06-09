@@ -90,6 +90,19 @@ button {
         top: .1em;
     }
 }
+.social {
+    padding-top: 3rem;
+    a {
+        text-decoration: none;
+        color: $color-blue;
+        font-size: 1.5rem;
+        padding: 0 1rem;
+        display: inline-block;
+        &:hover {
+            color: $color-grey-dark;
+        }
+    }
+}
 
 /* Header
 -----------------------------------------------------------------------------*/
