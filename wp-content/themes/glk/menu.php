@@ -16,10 +16,21 @@ $post = $post[0];
 <div class="stripe stripe-alt">
     <div class="container-wide">
         <h1 class="center">
-            <span class="btn btn-primary btn-big no-click">Menu</span>
-            <a class="btn btn-inactive btn-big" href="/weekend-brunch#menu">Weekend Brunch</a>
+            <?php if (is_page(8)) : ?>
+                <a class="btn btn-inactive btn-big" href="/#menu">Menu</a>
+                <span class="btn btn-primary btn-big no-click">Weekend Brunch</span>
+            <?php else : ?>
+                <span class="btn btn-primary btn-big no-click">Menu</span>
+                <a class="btn btn-inactive btn-big" href="/weekend-brunch#menu">Weekend Brunch</a>
+            <?php endif; ?> 
         </h1>
-        <?php echo do_shortcode('[fdm-menu id=37]'); ?>
+        <?php
+            if (is_page(8)) {
+                echo do_shortcode('[fdm-menu id=169]');
+            } else {
+                echo do_shortcode('[fdm-menu id=37]');
+            }
+        ?>
     </div>
 </div>
 <?php
